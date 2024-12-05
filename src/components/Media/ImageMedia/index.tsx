@@ -48,6 +48,8 @@ export const ImageMedia: React.FC<MediaProps> = (props) => {
     alt = altFromResource || ''
 
     src = `${getClientSideURL()}${url}`
+
+    console.log("srcc", src);
   }
 
   const loading = loadingFromProps || 'lazy'
