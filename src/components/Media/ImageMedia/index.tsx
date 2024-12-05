@@ -47,7 +47,9 @@ export const ImageMedia: React.FC<MediaProps> = (props) => {
     height = fullHeight!
     alt = altFromResource || ''
 
-    src = `${getClientSideURL()}${url}`
+    const filename = fullFilename
+
+    src = `${process.env.NEXT_PUBLIC_SERVER_URL}/media/${filename}`
 
     console.log("srcc", src);
   }
