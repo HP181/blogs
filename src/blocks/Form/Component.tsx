@@ -75,7 +75,6 @@ export const FormBlock: React.FC<
         }, 1000)
 
         try {
-          console.log("ff", getClientSideURL());
           const req = await fetch(`${getClientSideURL()}/api/form-submissions`, {
             body: JSON.stringify({
               form: formID,
