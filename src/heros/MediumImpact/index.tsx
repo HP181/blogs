@@ -24,11 +24,11 @@ export const MediumImpactHero: React.FC<Page['hero']> = ({ links, media, richTex
           </ul>
         )}
       </div>
-      <div className="container ">
+      <div className="container w-full mx-auto">
         {media && typeof media === 'object' && (
-          <div>
+          <div className='w-full mx-auto'>
             <Media
-              className="-mx-4 md:-mx-8 2xl:-mx-16"
+              className=""
               imgClassName=""
               priority={false}
               loading="lazy"
